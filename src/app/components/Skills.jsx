@@ -1,3 +1,4 @@
+// src/app/components/Skills.jsx
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -5,7 +6,6 @@ import CountUp from "react-countup";
 import { CircularProgressbar } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 
-// Define skills data
 const skillsData = [
   {
     category: "Frontend",
@@ -52,7 +52,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212] py-20 text-white">
+    <main id="skills" className="flex min-h-screen flex-col bg-[#121212] py-20 text-white">
       <section className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-8">My Skills</h2>
         
@@ -81,7 +81,7 @@ const Skills = () => {
                     <div className="bg-gray-700 rounded-full h-4 mb-2">
                       <motion.div
                         className="h-4 rounded-full"
-                        style={{ backgroundColor: "#3b82f6" }} // Blue color to match circular progress
+                        style={{ backgroundColor: "#3b82f6" }}
                         initial={{ width: 0 }}
                         animate={{ width: `${maxLevel}%` }}
                         transition={{ duration: 0.5 }}
@@ -100,7 +100,7 @@ const Skills = () => {
                         strokeWidth={10}
                         styles={{
                           path: {
-                            stroke: `#3b82f6`, // Consistent blue color
+                            stroke: `#3b82f6`,
                             strokeLinecap: 'round',
                             transition: 'stroke-dashoffset 0.5s ease 0s',
                           },
