@@ -39,17 +39,22 @@ const HeroSection = () => {
           <button
             aria-label="Hire me"
             className="bg-gradient-to-br from-blue-600 to-gray-700 hover:bg-blue-500 shadow-lg text-white px-6 py-3 rounded-full mr-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+            onClick={() => alert('Thank you for your interest!')}
           >
             Hire Me
           </button>
-          <button
+          <a
+            href="/CV/Saidi_Siragi_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Download CV"
-            className="m-4 bg-gradient-to-br from-blue-600 to-gray-700 px-1 py-1 text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            <span className="block bg-[#121212] hover:bg-gray-800 rounded-full px-5 py-2">
-              Download CV
-            </span>
-          </button>
+            <button className="m-4 bg-gradient-to-br from-blue-600 to-gray-700 px-1 py-1 text-white rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
+              <span className="block bg-[#121212] hover:bg-gray-800 rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </button>
+          </a>
         </div>
         <p className="text-gray-400 mb-6 text-lg lg:text-xl">
           Explore my projects and see what I can do for you!
