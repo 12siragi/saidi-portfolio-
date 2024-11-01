@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-white text-2xl font-bold">Saidi's Portfolio</div>
+          <div className="text-white text-2xl font-bold">Saidi&apos;s Portfolio</div>
           <div className="hidden md:flex space-x-6">
             <NavLink href="#about">About</NavLink>
             <NavLink href="#projects">Projects</NavLink>

@@ -1,4 +1,3 @@
-// src/app/components/Skills.jsx
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -51,6 +50,18 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  // Store hover state for skills in an object
+  const [hoveredSkills, setHoveredSkills] = useState({});
+
+  // Function to handle mouse enter and leave events
+  const handleMouseEnter = (skillName) => {
+    setHoveredSkills((prev) => ({ ...prev, [skillName]: true }));
+  };
+
+  const handleMouseLeave = (skillName) => {
+    setHoveredSkills((prev) => ({ ...prev, [skillName]: false }));
+  };
+
   return (
     <main id="skills" className="flex min-h-screen flex-col bg-[#121212] py-20 text-white">
       <section className="max-w-5xl mx-auto">
@@ -66,7 +77,6 @@ const Skills = () => {
           >
             <h3 className="text-2xl font-semibold mb-4">{group.category}</h3>
             {group.skills.map((skill) => {
-              const [isHovered, setIsHovered] = useState(false);
               const maxLevel = skill.level;
 
               return (
@@ -90,31 +100,17 @@ const Skills = () => {
                   </div>
                   <div 
                     className="w-16 h-16 ml-4" 
-                    onMouseEnter={() => setIsHovered(true)} 
-                    onMouseLeave={() => setIsHovered(false)}
+                    onMouseEnter={() => handleMouseEnter(skill.name)} 
+                    onMouseLeave={() => handleMouseLeave(skill.name)}
                   >
-                    <div className="bg-gray-700 rounded-full flex items-center justify-center">
-                      <CircularProgressbar 
-                        value={isHovered ? 100 : maxLevel} 
-                        text={`${isHovered ? 100 : maxLevel}%`} 
-                        strokeWidth={10}
-                        styles={{
-                          path: {
-                            stroke: `#3b82f6`,
-                            strokeLinecap: 'round',
-                            transition: 'stroke-dashoffset 0.5s ease 0s',
-                          },
-                          text: {
-                            fill: '#fff',
-                            fontSize: '16px',
-                            fontWeight: 'bold',
-                          },
-                          trail: {
-                            stroke: '#303030',
-                          },
-                        }} 
-                      />
-                    </div>
+                    <CircularProgressbar 
+                      value={skill.level} 
+                      text={`${skill.level}%`} 
+                      styles={{
+                        path: { stroke: `rgba(59, 130, 246, ${hoveredSkills[skill.name] ? 1 : 0.5})` },
+                        text: { fill: '#fff', fontSize: '16px' },
+                      }} 
+                    />
                   </div>
                 </div>
               );

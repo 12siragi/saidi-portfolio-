@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState, useEffect, forwardRef, memo } from "react";
+import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
           <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-blue-600 to-gray-800 shadow-lg">
-            Hello, I'm{" "}
+            Hello, I&apos;m{" "}
           </span>
           <br />
           <TypeAnimation
@@ -33,7 +33,7 @@ const HeroSection = () => {
           />
         </h1>
         <p className="text-gray-400 mb-6 text-lg lg:text-xl">
-        Transforming ideas into stunning, user-friendly web solutions
+          Transforming ideas into stunning, user-friendly web solutions
         </p>
         <div>
           <button
