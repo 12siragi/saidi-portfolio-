@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import EmailSection from "./components/EmailSection";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
      <HeroSection /> 
      <About />
      <Skills />
-     
+     <EmailSection /> 
       </main>
   );
 }
