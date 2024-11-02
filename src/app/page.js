@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import EmailSection from "./components/EmailSection";
-
+import About from "./components/About";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-[#121212] text-white">
@@ -14,7 +14,10 @@ export default function Home() {
           <HeroSection />
         </section>
 
-       
+        <section className="mb-12">
+          <About /> 
+        </section>
+
 
         {/* Email Section */}
         <section>
