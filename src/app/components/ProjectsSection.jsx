@@ -26,7 +26,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-16 px-4 bg-[#121212]">
+    <section id="projects" className="py-16 px-4 bg-[#121212]">
       <div className="container mx-auto">
         <h2 className="text-white text-4xl font-bold text-center mb-8">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
