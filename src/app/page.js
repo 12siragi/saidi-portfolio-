@@ -5,6 +5,7 @@ import EmailSection from "./components/EmailSection";
 import About from "./components/About";
 import Footer from "./components/Footer"; // Import Footer component
 import AchievementsSection from "./components/AchievementsSection"; // Adjust the path if needed
+import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,11 @@ export default function Home() {
         {/* Achievements Section */}
         <section className="mb-12">
           <AchievementsSection />
+        </section>
+        
+        {/* Projects Section */}
+        <section className="mb-12">
+          <ProjectsSection />
         </section>
 
         {/* Email Section */}
