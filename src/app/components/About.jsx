@@ -9,14 +9,15 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>FULL STACK DEVELOPER</li>
-        <li>BACKEND DEVELOPER</li>
-        <li>FRONTEND DEVELOPER</li>
-        <li>DATABASE</li>
-        <li>API</li>
-        <li>TOOLS</li>
-        <li>DEPLOYMENT</li>
-        <li>TESTING</li>
+        <li>JavaScript (ES6+) & Typescript</li>
+        <li>React.js & next.js & Redux</li>
+        <li>Node.js & Express</li>
+        <li>python & django,nginx, flask</li>
+        <li>PostgreSQL & Sequelize & myslq</li>
+        <li>HTML5 & CSS3 & tailwind & bootsrap</li>
+        <li>Git & insomnia,</li>
+        <li>RESTful APIs & Graphql</li>
+        <li>versel,heruku,AWS</li>
       </ul>
     ),
   },
@@ -27,7 +28,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>FULL STACK DEVELOPER ALX</li>
         <li>SOFTWARE ENGINER HACKERRACK</li>
-        <li>ICS COLLAGE , DIPLOMA, PRESENT </li>
+        <li>ICS COLLAGE for Computer science, DIPLOMA, PRESENT </li>
       </ul>
     ),
   },
@@ -38,6 +39,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>FULL STACK DEVELOPER</li>
         <li>SOFTWARE ENGINEER</li>
+        <li>SOTWARE ENGINEER INTERNISHIP</li>
         <li>FRONTED DEVELOPER</li>
       </ul>
     ),
@@ -61,7 +63,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          I am a passionate Full Stack Developer with a strong foundation in both frontend and backend technologies. My programming journey began with a love for problem-solving, inspiring me to explore various languages and frameworks. Having completed over 20 programming books, I have significantly solidified my understanding and skills in this field. I firmly believe that continuous learning is essential for growth in technology, and I am always eager to enhance my knowledge and abilities. My commitment to self-study has been instrumental in my development as a programmer.
+          I am a dedicated full-stack web developer with a solid foundation in building dynamic applications using modern JavaScript frameworks and tools. My core expertise lies in backend technologies, including Django,Node.js,Express and PostgreSQL,Mysql, while I am also skilled in frontend development with Reactframework. I have a deep understanding of RESTful API integration, responsive design, and version control with Git. Known for my collaborative approach and adaptability, I am committed to continuously expanding my skill set to stay aligned with the latest industry trends.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
