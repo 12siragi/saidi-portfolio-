@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Recipe Finder App",
+      "description": "A web app that allows users to search for recipes based on available ingredients. Includes filtering options and dietary preferences.",
+      "tags": ["React", "Redux", "API Integration", "CSS Modules"],
+      "link": "https://your-project-link.com"
+    },
+    {
+      "id": 2,
+      "title": "Weather Dashboard",
+      "description": "A real-time weather dashboard displaying current conditions and forecasts based on user location. Integrated with a weather API.",
+      "tags": ["Vue.js", "Chart.js", "Weather API", "Bootstrap"],
+      "link": "https://your-project-link.com"
+    },
+    {
+      "id": 3,
+      "title": "Personal Finance Tracker",
+      "description": "A tool to track income, expenses, and savings over time. Includes charts and personalized budgeting features.",
+      "tags": ["Node.js", "Express", "MongoDB", "D3.js"],
+      "link": "https://your-project-link.com"
+    }
+  ]
+  
