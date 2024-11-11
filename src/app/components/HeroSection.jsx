@@ -2,12 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
+    <section aria-labelledby="hero-heading" className="grid grid-cols-1 lg:grid-cols-12 my-4">
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
-        <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
+        <h1 id="hero-heading" className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
           <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-blue-600 to-gray-800 shadow-lg">
             Hello, I&apos;m{" "}
           </span>
@@ -36,13 +37,13 @@ const HeroSection = () => {
           Transforming ideas into stunning, user-friendly web solutions
         </p>
         <div>
-          <button
+          <a
+            href="/#contact"
             aria-label="Hire me"
             className="bg-gradient-to-br from-blue-600 to-gray-700 hover:bg-blue-500 shadow-lg text-white px-6 py-3 rounded-full mr-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
-            onClick={() => alert('Thank you for your interest!')}
           >
             Hire Me
-          </button>
+          </a>
           <a
             href="/CV/Saidi_Siragi_CV.pdf"
             target="_blank"
@@ -69,7 +70,8 @@ const HeroSection = () => {
             width={300}
             height={300}
             loading="lazy"
-            onError={(e) => (e.target.src = '/images/default_image.png')}
+            placeholder="blur"
+            blurDataURL="/images/default_image.png" // Placeholder image for smoother loading
           />
         </div>
       </div>
