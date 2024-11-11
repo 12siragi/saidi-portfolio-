@@ -4,49 +4,62 @@
     "title": "AirBnB Clone",
     "description": "A web app that allows users to search for accommodations based on various preferences. Includes filtering options for location, price, and amenities.",
     "tags": ["HTML", "CSS", "API Integration", "Flask"],
-    "link": "https://github.com/12siragi/AirBnB_clone"
+    "link": "https://github.com/12siragi/AirBnB_clone",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/airbnb-clone.jpg"
   },
   {
     "id": 2,
     "title": "Community Feed",
     "description": "A platform for sharing real-time updates and community posts, built to display live user interactions. Includes features for post creation, commenting, and likes.",
     "tags": ["Next.js", "TypeScript", "Vercel", "Bootstrap"],
-    "link": "https://github.com/12siragi/community-feed"
+    "link": "https://github.com/12siragi/community-feed",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/community-feed.jpg"
   },
   {
     "id": 3,
     "title": "Next Weather",
     "description": "A weather dashboard built with Next.js, TypeScript, and Tailwind CSS, designed to display real-time weather information.",
     "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
-    "link": "https://github.com/12siragi/next-weather"
+    "link": "https://github.com/12siragi/next-weather",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/next-weather.jpg"
   },
   {
     "id": 4,
     "title": "Personal Finance Tracker",
     "description": "A web-based application for managing personal finances, featuring expense tracking, authentication, authorization, budget management, and financial data visualization.",
     "tags": ["React", "Django", "MySQL", "Node.js", "Redux"],
-    "link": "https://github.com/12siragi/personal-finance-manager"
+    "link": "https://github.com/12siragi/personal-finance-manager",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/personal-finance-tracker.jpg"
   },
   {
     "id": 5,
     "title": "E-commerce Store (WIP)",
     "description": "A full-featured e-commerce website with shopping cart functionality, product listings, and secure checkout. Work in progress with ongoing development of payment integration and product details.",
     "tags": ["Vue.js", "Django", "MongoDB", "Tailwind CSS"],
-    "link": "https://github.com/12siragi/E-commerce-Store"
+    "link": "https://github.com/12siragi/E-commerce-Store",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/e-commerce-store.jpg"
   },
   {
     "id": 6,
     "title": "Social Media App (WIP)",
     "description": "A social media platform allowing users to create, edit, and delete posts, interact through likes and comments, and follow others. Built with Django REST API, Docker, and PostgreSQL for secure and scalable backend support. Currently implementing user notifications and real-time updates.",
     "tags": ["Vite.js", "Django", "REST API", "PostgreSQL", "Python", "JavaScript", "Nginx"],
-    "link": "https://github.com/12siragi/social-media-app"
+    "link": "https://github.com/12siragi/social-media-app",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/social-media-app.jpg"
   },
   {
     "id": 7,
     "title": "Portfolio Website",
     "description": "My personal portfolio showcasing my web development projects, skills, and experience. Built with HTML, CSS, JavaScript, and hosted on [hosting service]. Includes interactive elements and project details for each of my works.",
     "tags": ["TAILWIND.CSS", "Next.js", "Node.js", "Express.js", "GitHub Pages", "AWS"],
-    "link": "https://github.com/12siragi/saidi-portfolio-"
+    "link": "https://github.com/12siragi/saidi-portfolio-",
+    "previewUrl": "https://your-live-demo-url.com",
+    "imgUrl": "/images/portfolio-website.jpg"
   }
-  
 ]
