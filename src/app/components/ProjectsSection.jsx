@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const ProjectsSection = () => {
   const [projectsData, setProjectsData] = useState([]);
@@ -56,16 +56,27 @@ const ProjectsSection = () => {
 
       {/* Project Grid */}
       <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={project.id}
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard {...project} />
-          </motion.li>
-        ))}
+        {/* Add conditional rendering for loading state */}
+        {projectsData.length === 0 ? (
+          <p className="text-center text-white">Loading projects...</p>
+        ) : (
+          filteredProjects.map((project, index) => (
+            <motion.li
+              key={project.id}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
+            >
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                imgUrl={project.imgUrl} // Ensure imgUrl exists in your project data
+                gitUrl={project.link} // Pass the GitHub link as gitUrl
+                tags={project.tags}
+              />
+            </motion.li>
+          ))
+        )}
       </ul>
     </section>
   );

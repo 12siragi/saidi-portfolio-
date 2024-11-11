@@ -1,37 +1,52 @@
 [
   {
     "id": 1,
-    "title": "Recipe Finder App",
-    "description": "A web app that allows users to search for recipes based on available ingredients. Includes filtering options and dietary preferences.",
-    "tags": ["React", "Redux", "API Integration", "CSS Modules"],
-    "link": "https://your-project-link.com"
+    "title": "AirBnB Clone",
+    "description": "A web app that allows users to search for accommodations based on various preferences. Includes filtering options for location, price, and amenities.",
+    "tags": ["HTML", "CSS", "API Integration", "Flask"],
+    "link": "https://github.com/12siragi/AirBnB_clone"
   },
   {
     "id": 2,
-    "title": "Weather Dashboard",
-    "description": "A real-time weather dashboard displaying current conditions and forecasts based on user location. Integrated with a weather API.",
-    "tags": ["Vue.js", "Chart.js", "Weather API", "Bootstrap"],
-    "link": "https://your-project-link.com"
+    "title": "Community Feed",
+    "description": "A platform for sharing real-time updates and community posts, built to display live user interactions. Includes features for post creation, commenting, and likes.",
+    "tags": ["Next.js", "TypeScript", "Vercel", "Bootstrap"],
+    "link": "https://github.com/12siragi/community-feed"
   },
   {
     "id": 3,
-    "title": "Personal Finance Tracker",
-    "description": "A tool to track income, expenses, and savings over time. Includes charts and personalized budgeting features.",
-    "tags": ["Node.js", "Express", "MongoDB", "D3.js"],
-    "link": "https://your-project-link.com"
+    "title": "Next Weather",
+    "description": "A weather dashboard built with Next.js, TypeScript, and Tailwind CSS, designed to display real-time weather information.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "link": "https://github.com/12siragi/next-weather"
   },
   {
     "id": 4,
-    "title": "Task Manager",
-    "description": "A task management app that lets users create, edit, and delete tasks. Supports filtering by task status.",
-    "tags": ["React", "Node.js", "Express", "MongoDB"],
-    "link": "https://your-project-link.com"
+    "title": "Personal Finance Tracker",
+    "description": "A web-based application for managing personal finances, featuring expense tracking, authentication, authorization, budget management, and financial data visualization.",
+    "tags": ["React", "Django", "MySQL", "Node.js", "Redux"],
+    "link": "https://github.com/12siragi/personal-finance-manager"
   },
   {
     "id": 5,
-    "title": "E-commerce Store",
-    "description": "A full-fledged e-commerce website with shopping cart functionality, product listings, and secure checkout.",
-    "tags": ["Vue.js", "Node.js", "MongoDB", "Stripe"],
-    "link": "https://your-project-link.com"
+    "title": "E-commerce Store (WIP)",
+    "description": "A full-featured e-commerce website with shopping cart functionality, product listings, and secure checkout. Work in progress with ongoing development of payment integration and product details.",
+    "tags": ["Vue.js", "Django", "MongoDB", "Tailwind CSS"],
+    "link": "https://github.com/12siragi/E-commerce-Store"
+  },
+  {
+    "id": 6,
+    "title": "Social Media App (WIP)",
+    "description": "A social media platform allowing users to create, edit, and delete posts, interact through likes and comments, and follow others. Built with Django REST API, Docker, and PostgreSQL for secure and scalable backend support. Currently implementing user notifications and real-time updates.",
+    "tags": ["Vite.js", "Django", "REST API", "PostgreSQL", "Python", "JavaScript", "Nginx"],
+    "link": "https://github.com/12siragi/social-media-app"
+  },
+  {
+    "id": 7,
+    "title": "Portfolio Website",
+    "description": "My personal portfolio showcasing my web development projects, skills, and experience. Built with HTML, CSS, JavaScript, and hosted on [hosting service]. Includes interactive elements and project details for each of my works.",
+    "tags": ["TAILWIND.CSS", "Next.js", "Node.js", "Express.js", "GitHub Pages", "AWS"],
+    "link": "https://github.com/12siragi/saidi-portfolio-"
   }
+  
 ]
