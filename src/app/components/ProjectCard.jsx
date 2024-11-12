@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image"; // Import Image component from next/image
 
 const ProjectCard = ({ title, description, imgUrl, gitUrl, previewUrl, tags }) => {
   return (
@@ -7,10 +8,16 @@ const ProjectCard = ({ title, description, imgUrl, gitUrl, previewUrl, tags }) =
       className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
       whileHover={{ scale: 1.05 }}
     >
-      <img
+      {/* Replace img with Image from next/image */}
+      <Image
         src={imgUrl}
         alt={`${title} screenshot`}
         className="w-full h-48 object-cover"
+        width={500}  // Define a width (this can be adjusted based on the design)
+        height={200} // Define a height (this can be adjusted based on the design)
+        loading="lazy"
+        placeholder="blur"  // Optional: Adds blur effect while loading
+        blurDataURL="/images/default_image.png"  // Placeholder image for smoother loading
       />
 
       <div className="p-4">

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";  // Import Link from next/link
 
 const HeroSection = () => {
   return (
@@ -37,13 +38,10 @@ const HeroSection = () => {
           Transforming ideas into stunning, user-friendly web solutions
         </p>
         <div>
-          <a
-            href="/#contact"
-            aria-label="Hire me"
-            className="bg-gradient-to-br from-blue-600 to-gray-700 hover:bg-blue-500 shadow-lg text-white px-6 py-3 rounded-full mr-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
-          >
+          {/* Directly using Link without <a> */}
+          <Link href="/#contact" className="bg-gradient-to-br from-blue-600 to-gray-700 hover:bg-blue-500 shadow-lg text-white px-6 py-3 rounded-full mr-4 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl" aria-label="Hire me">
             Hire Me
-          </a>
+          </Link>
           <a
             href="/CV/Saidi_Siragi_CV.pdf"
             target="_blank"
