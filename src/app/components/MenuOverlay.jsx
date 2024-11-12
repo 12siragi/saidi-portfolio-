@@ -1,17 +1,25 @@
+// MenuOverlay.js
 "use client";
 import React from "react";
-import NavLink from "./NavLink";
+import NavLink from "./NavLink"; // Import the safe NavLink component
 
-const MenuOverlay = ({ toggleMenu }) => {
+const MenuOverlay = ({ links, toggleMenu }) => {
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex flex-col items-center justify-center z-50">
       <div className="text-white text-2xl mb-4">Menu</div>
-      <NavLink href="#about" onClick={toggleMenu}>About</NavLink>
-      <NavLink href="#projects" onClick={toggleMenu}>Projects</NavLink>
-      <NavLink href="#skills" onClick={toggleMenu}>Skills</NavLink>
-      <NavLink href="#contact" onClick={toggleMenu}>Contact</NavLink>
+      <ul className="flex flex-col items-center space-y-4">
+        {links.map((link, index) => (
+          <li key={index}>
+            {/* Pass onClick to close the menu when a link is clicked */}
+            <NavLink href={link.path} onClick={toggleMenu}>
+              {link.title}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+      {/* Close menu button */}
       <button
-        className="mt-4 text-white hover:text-gray-300"
+        className="mt-6 text-white hover:text-gray-300"
         onClick={toggleMenu}
       >
         Close Menu

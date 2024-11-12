@@ -1,11 +1,12 @@
-
+// Navbar.js
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import NavLink from "./NavLink"; // A separate component for navigation links
+import NavLink from "./NavLink"; // Component for individual nav links
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay"; // A component for mobile menu overlay
+import MenuOverlay from "./MenuOverlay"; // Component for mobile menu overlay
 
+// Define navigation links as an array of objects for easy mapping
 const navLinks = [
   { title: "About", path: "#about" },
   { title: "Projects", path: "#projects" },
@@ -13,32 +14,41 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu visibility
+  // State to manage mobile menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Function to toggle mobile menu open/close
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev); // Toggle the menu open/close state
+    setIsMenuOpen((prevState) => !prevState);
   };
 
   return (
-    <nav className="bg-[#121212] border-b border-[#33353F]">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-white text-2xl font-bold">Saidi&apos;s Portfolio</div>
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] border-b border-[#33353F]">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+        {/* Logo or Brand Name */}
+        <Link href="/" aria-label="Home">
+          Saidi&apos;s Portfolio
+        </Link>
+
+        {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-6">
           {navLinks.map((link, index) => (
-            <NavLink key={index} href={link.path}>{link.title}</NavLink>
+            <NavLink key={index} href={link.path}>
+              {link.title}
+            </NavLink>
           ))}
         </div>
+
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-gray-300 hover:text-white focus:outline-none">
-            {isOpen ? (
-              <XMarkIcon className="h-6 w-6" />
-            ) : (
-              <Bars3Icon className="h-6 w-6" />
-            )}
+            {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
           </button>
         </div>
       </div>
-      {isOpen && <MenuOverlay toggleMenu={toggleMenu} links={navLinks} />} {/* Render MenuOverlay if isOpen is true */}
+
+      {/* Conditional rendering of MenuOverlay for mobile view */}
+      {isMenuOpen && <MenuOverlay toggleMenu={toggleMenu} links={navLinks} />}
     </nav>
   );
 };
