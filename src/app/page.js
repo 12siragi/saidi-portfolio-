@@ -25,10 +25,10 @@ export default function Home() {
         <section className="mb-12">
           <AchievementsSection />
         </section>
-        
+
         {/* Projects Section */}
         <section className="mb-12">
-          <ProjectsSection />
+        <ProjectsSection />
         </section>
 
         {/* Email Section */}

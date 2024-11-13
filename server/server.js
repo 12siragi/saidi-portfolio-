@@ -1,12 +1,11 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const cors = require('cors'); // Add this line
+const cors = require('cors');
 
 const app = express();
 const PORT = 5000;
 
-// Enable CORS for all routes
 app.use(cors());
 
 app.get('/api/projects', (req, res) => {
