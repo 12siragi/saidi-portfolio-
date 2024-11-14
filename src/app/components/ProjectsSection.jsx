@@ -1,7 +1,9 @@
+// components/ProjectsSection.js
+
 "use client";
 import React, { useState, useEffect } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
+import ProjectCard from "./ProjectCard"; // Assuming you have a ProjectCard component
+import ProjectTag from "./ProjectTag"; // Assuming you have a ProjectTag component
 import { motion } from "framer-motion";
 
 const ProjectsSection = () => {
@@ -10,7 +12,8 @@ const ProjectsSection = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/projects")
+    // Fetch data from the API route
+    fetch("/api/projects")
       .then((response) => response.json())
       .then((data) => setProjectsData(data))
       .catch((error) => console.error("Error fetching projects:", error));
